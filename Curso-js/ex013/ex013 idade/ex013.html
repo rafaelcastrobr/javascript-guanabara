@@ -5,12 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Meu P Prog</title>
+  <title>Verificador de Idade</title>
 </head>
 <body>
-    <h1>Olá, mundo!</h1>
-    <p>Já me livrei!!!</p>
-
+  <header>
+    <h1>Verificador de Idade</h1>
+  </header>
+  <section>
+    <div>
+      <p>
+        <label for="txtano">Ano de Nascimento:</label>
+        <input type="number" name="txtano" id="txtano" min="0">
+      </p>
+      <p>
+        <label for="masc">Sexo:</label>
+        <input type="radio" name="radsex" id="masc" checked>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="radsex" id="fem">
+        <label for="fem">Feminino</label>
+      </p>
+      <p>
+        <input type="button" value="Verificar" id="verificar">
+      </p>
+    </div>
+    <div id="res">
+      Preencha os dados acima para ver o resultado
+    </div>
+  </section>
+  <footer>
+    <p>CursoEmVideo</p>
+  </footer>
 
 
     <script src="script.js"></script>
